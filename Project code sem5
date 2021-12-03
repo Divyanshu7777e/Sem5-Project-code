@@ -8,8 +8,8 @@ import smtplib
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-# print(voices[1].id)
-engine.setProperty('voice', voices[1].id)
+# print(voices[0].id)
+engine.setProperty('voice', voices[0].id)
 
 def speak(audio):
     engine.say(audio)
@@ -26,7 +26,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("I am IOWA Sir. Please tell me how may I help you")
+    speak("I am NIO Sir. Please tell me how may I help you")
     
 wishMe
 
